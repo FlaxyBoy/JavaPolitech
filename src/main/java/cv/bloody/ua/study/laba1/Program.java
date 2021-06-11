@@ -89,7 +89,6 @@ public final class Program implements IProgram {
             }
         }else if(type.equals("b")) {
             for(int i = 0 ; i < array.length ; i++) {
-                System.out.println("A[" + i + "]: ");
                 array[i] = new Random().nextInt(201) - 100;
             }
         }else {
@@ -117,9 +116,12 @@ public final class Program implements IProgram {
         System.out.println("Максимальный елеммент массиву = A[" + max + "] = " + array[max]);
         if(first == -1) {
             System.out.println("В заданому массиві немає від'ємних елементів");
-        }else {
+        }else if(first == last) {
+            System.out.println("В заданому массиві лиш 1 вдємний елемент");
+        }
+        else {
             int value = 0;
-            for(int i = first ; i <= last ; i++) {
+            for(int i = first + 1 ; i < last ; i++) {
                 value += array[i];
             }
             System.out.println("Сумма між першим і останім від'ємним числом - " + value);
