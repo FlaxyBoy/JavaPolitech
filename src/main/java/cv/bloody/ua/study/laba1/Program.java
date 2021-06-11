@@ -66,7 +66,7 @@ public final class Program implements IProgram {
         do {
             System.out.println("x = " + String.format("%.2f" , a) + " | y = " + String.format("%.2f" , Math.tan(a)));
             a += Math.PI / 20;
-        }while (a < Math.PI);
+        }while (a <= Math.PI);
     }
 
     /* *
@@ -122,7 +122,7 @@ public final class Program implements IProgram {
             for(int i = first ; i <= last ; i++) {
                 value += array[i];
             }
-            System.out.println("Добуток між першим і останім від'ємним числом - " + value);
+            System.out.println("Сумма між першим і останім від'ємним числом - " + value);
         }
     }
 
