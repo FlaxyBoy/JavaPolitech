@@ -66,16 +66,16 @@ public class Database {
             return;
         }
         System.out.println(teacher.get());
-        System.out.println("Введіть 1 щоб ізминити кафедру викладача, 2 щоб змінити рівень кваліфікації");
+        System.out.println("Введіть 1 щоб змінити кафедру викладача, 2 щоб змінити рівень кваліфікації");
         int operation = scanner.nextInt();
         switch (operation) {
             case 1:
-                System.out.println("Ввудіть назву нової кафедри");
-                teacher.get().setDepartmentName(scanner.nextLine());
+                System.out.println("Введіть назву нової кафедри");
+                teacher.get().setDepartmentName(scanner.next());
                 break;
             case 2:
-                System.out.println("Ввудіть назву нового рівня кваліфікації");
-                teacher.get().setScienceDegree(scanner.nextLine());
+                System.out.println("Введіть назву нового рівня кваліфікації");
+                teacher.get().setScienceDegree(scanner.next());
                 break;
             default:
                 System.out.println("Невідома операція");
