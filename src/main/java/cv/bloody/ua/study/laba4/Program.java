@@ -19,7 +19,7 @@ public class Program implements IProgram {
                     "3 щоб знищити запис, " +
                     "4 пошук інформації, " +
                     "5 пошук інформації за періодом, "  +
-                    "6 пошук інформації зі мінімальною кількістю " +
+                    "6 пошук інформації зі мінімальною кількістю доріжок,  " +
                     "7 вихід");
             n = scanner.nextInt();
             if(n == 1) {
@@ -31,10 +31,10 @@ public class Program implements IProgram {
             }else if(n == 4) {
                 Database.getInstance().search();
             }else if(n == 5) {
-                Database.getInstance().search();
+                Database.getInstance().searchByPeriod();
             }
             else if(n == 6) {
-                Database.getInstance().search();
+                Database.getInstance().searchByAvailableTracks();
             }
             else if(n != 7){
                 System.out.println("Невідома операція");
