@@ -44,10 +44,10 @@ public class Database {
         fatherName = scanner.nextLine();
         System.out.println("Введіть номер посвідчення");
         certificateNumber = scanner.nextInt();
-        System.out.println("Введіть назву кафедри викладача\n");
+        System.out.println("Введіть назву кафедри викладача");
         departmentName = scanner.next();
         System.out.println("Введіть рівень кваліфікації викладача");
-        scienceDegree = scanner.nextLine();
+        scienceDegree = scanner.next();
         teacherList.add(new Teacher(certificateNumber , name , secondName , fatherName , departmentName , scienceDegree));
     }
 

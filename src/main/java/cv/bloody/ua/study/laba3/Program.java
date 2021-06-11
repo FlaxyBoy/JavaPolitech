@@ -10,7 +10,18 @@ public class Program implements IProgram {
 
     @Override
     public void start(String[] args) {
-        task2();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введіть номер завдання: ");
+        switch (scanner.nextInt()) {
+            case 1:
+                task1();
+                break;
+            case 2:
+                task2();
+                break;
+            default:
+                System.out.println("Не вірний номер завдання");
+        }
     }
 
     /**
