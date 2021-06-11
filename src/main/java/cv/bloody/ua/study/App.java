@@ -14,7 +14,6 @@ public class App {
         programMap.put(3 , new cv.bloody.ua.study.laba3.Program());
         programMap.put(4 , new cv.bloody.ua.study.laba4.Program());
         programMap.put(5 , new cv.bloody.ua.study.laba5.Program());
-        programMap.put(7 , new cv.bloody.ua.study.laba7.Program());
     }
 
     public static void main(String[] args) {

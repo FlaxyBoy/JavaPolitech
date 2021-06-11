@@ -20,16 +20,6 @@ public enum TimeOfTheYearEnum {
     }
 
     /**
-     * Метод для получення переліку місяців пори року
-     *
-     * @return int[] перелік місяців пори року
-     */
-
-    public int[] getNumbersOfMonths() {
-        return numbersOfMonths;
-    }
-
-    /**
      * Метод для получення імя пори року
      *
      * @return String імя пори року

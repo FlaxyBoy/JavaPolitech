@@ -62,9 +62,11 @@ public final class Program implements IProgram {
      */
 
     private void task2() {
-        for(double a = 0 ; a <= Math.PI ; a += Math.PI / 20) {
+        double a = 0;
+        do {
             System.out.println("x = " + String.format("%.2f" , a) + " | y = " + String.format("%.2f" , Math.tan(a)));
-        }
+            a += Math.PI / 20;
+        }while (a < Math.PI);
     }
 
     /* *
